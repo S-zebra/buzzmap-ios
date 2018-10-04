@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--現在地-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" title="現在地" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="buzzmap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-jA-5nM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8GZ-Ic-piC" appends="YES" id="cbd-aW-t1S"/>
+                                </connections>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keS-nV-DWc">
+                                <rect key="frame" x="0.0" y="37" width="375" height="44"/>
+                                <color key="barTintColor" red="0.59999999999999998" green="0.77647058823529413" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="ホーム" id="4se-Fh-vOL">
+                                        <barButtonItem key="leftBarButtonItem" id="YQQ-hu-Z6I">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Pc-fa-fwl">
+                                                <rect key="frame" x="16" y="10" width="78" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="baseline_location_on_black_24pt">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="myLocationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqA-DU-25d"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="78x-gl-eIj">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="keS-nV-DWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BsI-Yq-fUS"/>
+                            <constraint firstItem="keS-nV-DWc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CEG-ne-lwj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fS1-jA-5nM" secondAttribute="trailing" id="VF7-Ug-HhK"/>
+                            <constraint firstItem="fS1-jA-5nM" firstAttribute="top" secondItem="keS-nV-DWc" secondAttribute="bottom" id="bR3-mI-RES"/>
+                            <constraint firstItem="keS-nV-DWc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dhv-95-GiZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fS1-jA-5nM" secondAttribute="bottom" id="qsi-m1-PNJ"/>
+                            <constraint firstItem="fS1-jA-5nM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vg0-Xb-ltK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gestureRecognizer" destination="8GZ-Ic-piC" id="05B-p2-iGg"/>
+                        <outlet property="mapView" destination="fS1-jA-5nM" id="8sf-dw-XAg"/>
+                        <outlet property="myLocationButton" destination="0Pc-fa-fwl" id="kJ1-9m-bwn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="8GZ-Ic-piC"/>
             </objects>
+            <point key="canvasLocation" x="112.8" y="28.335832083958024"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baseline_location_on_black_24pt" width="24" height="24"/>
+    </resources>
+    <color key="tintColor" red="0.66666666669999997" green="0.5450980392" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
