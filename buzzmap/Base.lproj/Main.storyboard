@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NAs-9f-q90">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,6 +76,50 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="8GZ-Ic-piC"/>
             </objects>
             <point key="canvasLocation" x="112.8" y="28.335832083958024"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="OVe-hf-MrA">
+            <objects>
+                <viewController title="Login" id="NAs-9f-q90" customClass="LoginViewController" customModule="buzzmap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3dc-CP-f8x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログイン中…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg8-9a-jhf">
+                                <rect key="frame" x="137.5" y="323.5" width="100" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Eay-UI-i8c">
+                                <rect key="frame" x="109.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="もう少しお待ちください…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiZ-QT-ppV">
+                                <rect key="frame" x="85.5" y="352" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.59999999999999998" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eay-UI-i8c" firstAttribute="centerY" secondItem="3dc-CP-f8x" secondAttribute="centerY" id="aJI-KL-xhT"/>
+                            <constraint firstItem="gg8-9a-jhf" firstAttribute="centerY" secondItem="3dc-CP-f8x" secondAttribute="centerY" id="cKc-vz-nv4"/>
+                            <constraint firstItem="SiZ-QT-ppV" firstAttribute="top" secondItem="gg8-9a-jhf" secondAttribute="bottom" constant="8" id="eQe-rL-clf"/>
+                            <constraint firstItem="gg8-9a-jhf" firstAttribute="centerX" secondItem="3dc-CP-f8x" secondAttribute="centerX" id="lQl-88-rVh"/>
+                            <constraint firstItem="gg8-9a-jhf" firstAttribute="leading" secondItem="Eay-UI-i8c" secondAttribute="trailing" constant="8" id="s4C-Un-Ybb"/>
+                            <constraint firstItem="SiZ-QT-ppV" firstAttribute="centerX" secondItem="3dc-CP-f8x" secondAttribute="centerX" id="tAM-R5-NP5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nm1-rf-8Vj"/>
+                    </view>
+                    <connections>
+                        <outlet property="waitMoreLabel" destination="SiZ-QT-ppV" id="TE8-sc-4xF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pi-03-JDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="28"/>
         </scene>
     </scenes>
     <resources>

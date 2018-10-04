@@ -11,12 +11,22 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
-
+  static var passedKey: String?
   var locationManager: CLLocationManager!
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     locationManager = CLLocationManager()
+    return true
+  }
+
+  func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+    if url.scheme == "tmokku" && (url.query?.contains("token="))! {
+      // tmokku://login/callback?hage=piyo&token=XXXX&hoge=fuga
+      // query?.split("token=")[1].split("&")[0]
+      let queries = url.query?.components(separatedBy: "token=")[1]
+      AppDelegate.passedKey = (queries?.contains("&"))! ? queries?.components(separatedBy: "&")[1] : queries
+    }
     return true
   }
 
