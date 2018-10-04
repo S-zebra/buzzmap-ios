@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6405EBC52162027D000E1B3E /* TsukumoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405EBC42162027D000E1B3E /* TsukumoAPI.swift */; };
+		6405EBCB21665A33000E1B3E /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405EBC821665A2B000E1B3E /* CommonUtil.swift */; };
+		6405EBCD21665A33000E1B3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405EBCA21665A33000E1B3E /* HomeViewController.swift */; };
 		648C1466215B09BC005E71B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C1465215B09BC005E71B5 /* AppDelegate.swift */; };
-		648C1468215B09BC005E71B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C1467215B09BC005E71B5 /* ViewController.swift */; };
 		648C146B215B09BC005E71B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648C1469215B09BC005E71B5 /* Main.storyboard */; };
 		648C146D215B09BD005E71B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648C146C215B09BD005E71B5 /* Assets.xcassets */; };
 		648C1470215B09BD005E71B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648C146E215B09BD005E71B5 /* LaunchScreen.storyboard */; };
 		648C147B215B09BD005E71B5 /* buzzmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C147A215B09BD005E71B5 /* buzzmapTests.swift */; };
 		648C1486215B09BD005E71B5 /* buzzmapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C1485215B09BD005E71B5 /* buzzmapUITests.swift */; };
+		6493B78C216109B80076793C /* baseline_location_on_black_24pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493B786216109B70076793C /* baseline_location_on_black_24pt.xcassets */; };
+		6493B78D216109B80076793C /* outline_location_on_black_24pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493B787216109B70076793C /* outline_location_on_black_24pt.xcassets */; };
+		6493B78E216109B80076793C /* outline_close_white_24pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493B788216109B80076793C /* outline_close_white_24pt.xcassets */; };
+		6493B78F216109B80076793C /* outline_send_white_24pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493B789216109B80076793C /* outline_send_white_24pt.xcassets */; };
+		6493B790216109B80076793C /* baseline_my_location_white_24pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493B78A216109B80076793C /* baseline_my_location_white_24pt.xcassets */; };
+		6493B791216109B80076793C /* baseline_check_white_24pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493B78B216109B80076793C /* baseline_check_white_24pt.xcassets */; };
+		6493B79321610D8A0076793C /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6493B79221610D8A0076793C /* MyLocationManager.swift */; };
+		6493B7962161272C0076793C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6493B7952161272C0076793C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6405EBC42162027D000E1B3E /* TsukumoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TsukumoAPI.swift; sourceTree = "<group>"; };
+		6405EBC821665A2B000E1B3E /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		6405EBCA21665A33000E1B3E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		648C1462215B09BC005E71B5 /* buzzmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buzzmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		648C1465215B09BC005E71B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		648C1467215B09BC005E71B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		648C146A215B09BC005E71B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		648C146C215B09BD005E71B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		648C146F215B09BD005E71B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,15 @@
 		648C1481215B09BD005E71B5 /* buzzmapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buzzmapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		648C1485215B09BD005E71B5 /* buzzmapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buzzmapUITests.swift; sourceTree = "<group>"; };
 		648C1487215B09BD005E71B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6493B786216109B70076793C /* baseline_location_on_black_24pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = baseline_location_on_black_24pt.xcassets; sourceTree = "<group>"; };
+		6493B787216109B70076793C /* outline_location_on_black_24pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = outline_location_on_black_24pt.xcassets; sourceTree = "<group>"; };
+		6493B788216109B80076793C /* outline_close_white_24pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = outline_close_white_24pt.xcassets; sourceTree = "<group>"; };
+		6493B789216109B80076793C /* outline_send_white_24pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = outline_send_white_24pt.xcassets; sourceTree = "<group>"; };
+		6493B78A216109B80076793C /* baseline_my_location_white_24pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = baseline_my_location_white_24pt.xcassets; sourceTree = "<group>"; };
+		6493B78B216109B80076793C /* baseline_check_white_24pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = baseline_check_white_24pt.xcassets; sourceTree = "<group>"; };
+		6493B79221610D8A0076793C /* MyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationManager.swift; sourceTree = "<group>"; };
+		6493B7952161272C0076793C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6493B79A2161BD230076793C /* run.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = run.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6493B7962161272C0076793C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +99,12 @@
 		648C1459215B09BC005E71B5 = {
 			isa = PBXGroup;
 			children = (
+				6493B79A2161BD230076793C /* run.gpx */,
 				648C1464215B09BC005E71B5 /* buzzmap */,
 				648C1479215B09BD005E71B5 /* buzzmapTests */,
 				648C1484215B09BD005E71B5 /* buzzmapUITests */,
 				648C1463215B09BC005E71B5 /* Products */,
+				6493B7942161272C0076793C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +121,13 @@
 		648C1464215B09BC005E71B5 /* buzzmap */ = {
 			isa = PBXGroup;
 			children = (
+				6405EBC42162027D000E1B3E /* TsukumoAPI.swift */,
+				6493B7992161A8300076793C /* Assets */,
 				648C1465215B09BC005E71B5 /* AppDelegate.swift */,
-				648C1467215B09BC005E71B5 /* ViewController.swift */,
+				6405EBCA21665A33000E1B3E /* HomeViewController.swift */,
+				6493B79221610D8A0076793C /* MyLocationManager.swift */,
+				6405EBC821665A2B000E1B3E /* CommonUtil.swift */,
 				648C1469215B09BC005E71B5 /* Main.storyboard */,
-				648C146C215B09BD005E71B5 /* Assets.xcassets */,
 				648C146E215B09BD005E71B5 /* LaunchScreen.storyboard */,
 				648C1471215B09BD005E71B5 /* Info.plist */,
 			);
@@ -123,6 +150,29 @@
 				648C1487215B09BD005E71B5 /* Info.plist */,
 			);
 			path = buzzmapUITests;
+			sourceTree = "<group>";
+		};
+		6493B7942161272C0076793C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6493B7952161272C0076793C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6493B7992161A8300076793C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6493B78B216109B80076793C /* baseline_check_white_24pt.xcassets */,
+				6493B786216109B70076793C /* baseline_location_on_black_24pt.xcassets */,
+				6493B78A216109B80076793C /* baseline_my_location_white_24pt.xcassets */,
+				6493B788216109B80076793C /* outline_close_white_24pt.xcassets */,
+				6493B787216109B70076793C /* outline_location_on_black_24pt.xcassets */,
+				6493B789216109B80076793C /* outline_send_white_24pt.xcassets */,
+				648C146C215B09BD005E71B5 /* Assets.xcassets */,
+			);
+			name = Assets;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,22 +243,24 @@
 				TargetAttributes = {
 					648C1461215B09BC005E71B5 = {
 						CreatedOnToolsVersion = 10.0;
-						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					648C1475215B09BD005E71B5 = {
 						CreatedOnToolsVersion = 10.0;
-						ProvisioningStyle = Automatic;
 						TestTargetID = 648C1461215B09BC005E71B5;
 					};
 					648C1480215B09BD005E71B5 = {
 						CreatedOnToolsVersion = 10.0;
-						ProvisioningStyle = Automatic;
 						TestTargetID = 648C1461215B09BC005E71B5;
 					};
 				};
 			};
 			buildConfigurationList = 648C145D215B09BC005E71B5 /* Build configuration list for PBXProject "buzzmap" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -232,9 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6493B791216109B80076793C /* baseline_check_white_24pt.xcassets in Resources */,
+				6493B78C216109B80076793C /* baseline_location_on_black_24pt.xcassets in Resources */,
+				6493B78D216109B80076793C /* outline_location_on_black_24pt.xcassets in Resources */,
 				648C1470215B09BD005E71B5 /* LaunchScreen.storyboard in Resources */,
+				6493B78E216109B80076793C /* outline_close_white_24pt.xcassets in Resources */,
 				648C146D215B09BD005E71B5 /* Assets.xcassets in Resources */,
+				6493B790216109B80076793C /* baseline_my_location_white_24pt.xcassets in Resources */,
 				648C146B215B09BC005E71B5 /* Main.storyboard in Resources */,
+				6493B78F216109B80076793C /* outline_send_white_24pt.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648C1468215B09BC005E71B5 /* ViewController.swift in Sources */,
+				6493B79321610D8A0076793C /* MyLocationManager.swift in Sources */,
+				6405EBCD21665A33000E1B3E /* HomeViewController.swift in Sources */,
+				6405EBCB21665A33000E1B3E /* CommonUtil.swift in Sources */,
+				6405EBC52162027D000E1B3E /* TsukumoAPI.swift in Sources */,
 				648C1466215B09BC005E71B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +486,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -436,7 +498,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = buzzmap/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.senshu-u.uemtp2018.buzzmap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -450,7 +515,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = buzzmap/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.senshu-u.uemtp2018.buzzmap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -465,7 +533,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = buzzmapTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.senshu-u.uemtp2018.buzzmapTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -481,7 +553,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = buzzmapTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.senshu-u.uemtp2018.buzzmapTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -496,7 +572,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = buzzmapUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.senshu-u.uemtp2018.buzzmapUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -511,7 +591,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = buzzmapUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.senshu-u.uemtp2018.buzzmapUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
