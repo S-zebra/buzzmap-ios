@@ -33,13 +33,11 @@
                                 <items>
                                     <navigationItem title="ホーム" id="4se-Fh-vOL">
                                         <barButtonItem key="leftBarButtonItem" id="YQQ-hu-Z6I">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Pc-fa-fwl">
-                                                <rect key="frame" x="16" y="10" width="78" height="24"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Pc-fa-fwl">
+                                                <rect key="frame" x="16" y="0.0" width="186" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="baseline_location_on_black_24pt">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <state key="normal" image="Button2"/>
                                                 <connections>
                                                     <action selector="myLocationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqA-DU-25d"/>
                                                 </connections>
@@ -123,7 +121,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baseline_location_on_black_24pt" width="24" height="24"/>
+        <image name="Button2" width="186" height="80"/>
     </resources>
     <color key="tintColor" red="0.66666666669999997" green="0.5450980392" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
